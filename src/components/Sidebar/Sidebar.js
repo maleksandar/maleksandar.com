@@ -17,8 +17,8 @@ const Sidebar = ({ isIndex }: Props) => {
   return (
     <div className={styles['sidebar']}>
       <div className={styles['sidebar__inner']}>
-        <Author author={author} isIndex={isIndex} />
         <Menu menu={menu} />
+        <Author author={author} isIndex={isIndex} />
         <Contacts contacts={author.contacts} />
         <Copyright copyright={copyright} />
       </div>
