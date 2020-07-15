@@ -1,11 +1,12 @@
 // // @flow strict
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import { useSiteMetadata } from '../hooks';
 import styles from './Cv.module.scss';
 
-const IndexTemplate = () => {
+const Cv = () => {
+
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
 
   const pageTitle = `CV - ${siteTitle}`;
@@ -14,7 +15,6 @@ const IndexTemplate = () => {
     <Layout title={pageTitle} description={siteSubtitle}>
       <Sidebar/>
       <div className={styles['cv']}>
-          
           <div className={styles['cv__inner']}>
             <h1 className={styles['cv__title']}>Sadrzaj CVa</h1>
             <p>
@@ -27,10 +27,4 @@ const IndexTemplate = () => {
   );
 };
 
-export default IndexTemplate;
-
-// export default class CV extends React.Component {
-//   render() {
-//     return <h1>Hello, {this.props.name}</h1>;
-//   }
-// }
+export default Cv;
