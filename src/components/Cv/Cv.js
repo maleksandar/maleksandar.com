@@ -1,59 +1,40 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+import Project from './Project';
+import data from './data';
 
-const Cv = () => (
-        <div>
-            <h2>Contents of CV</h2>
-            <p>
-            
-            Aleksandar Milosavljević
+const Cv = () => {
+  const pageRef = useRef();
+
+  useEffect(() => {
+    pageRef.current.scrollIntoView();
+  });
+
+  return (
+    <div ref={pageRef}>
+
 Senior UI Developer
 
-Summary
-Software engineer with a strong focus on quality and maintainability. From a technical perspective, mostly focused on Angular stack running on high-end enterprise solutions. Other than coding he has relevant experience in mentoring other engineers, team organization responsibilities and consulting. Highly proficient in speaking English and has solid communication skills. Has 5 years of professional experience in the IT industry.
-Technical skills
-Programming languages: JavaScript, Typescript, HTML, CSS, C#
-Frameworks and libraries: Angular.js, Angular 2+, Rx.js, React
-Platforms: Mac OS X, Windows 10, Linux
-Automation and Testing tools: Selenium WebDriver (C#), Jasmine, Jest, Protractor, Karma
-Databases: MongoDB, MS SQLServer, RavenDB
-Issue Tracking: Jira, TFS
-Experience
+<h3>Summary</h3>
+<p>
+  Software engineer with a strong focus on quality and maintainability.
+  From a technical perspective, mostly focused on Angular stack running on high-end enterprise solutions.
+  Other than coding he has relevant experience in mentoring other engineers, team organization responsibilities and consulting.
+  Highly proficient in speaking English and has solid communication skills.
+  Has 5 years of professional experience in the IT industry.
+</p>
 
-02/2019 – 04/2020, Senior UI Engineer, Grid Dynamics, Belgrade
-Widget board integrated with multiple banking services relevant for financial advisors.
+<h3>Technical skills:</h3>
+<ul>
+    <li>Programming languages: JavaScript, Typescript, HTML, CSS, C#</li>
+    <li>Frameworks and libraries: Angular.js, Angular 2+, Rx.js, React</li>
+    <li>Platforms: Mac OS X, Windows 10, Linux</li>
+    <li>Automation and Testing tools: Selenium WebDriver (C#), Jasmine, Jest, Protractor, Karma</li>
+    <li>Databases: MongoDB, MS SQLServer, RavenDB</li>
+    <li>Issue Tracking: Jira, TFS</li>
+</ul>
+<h3>Experience</h3>
 
-Responsibilities:
-Development of a widget board that presents data from various sources relevant for Financial Advisors.
-Team Lead responsibilities, such as estimations and workload planning.
-Refactoring and reviewing code.
-Conducting demos.
-Fixing the old state management flow system of the application and introducing a new flux-like pattern and persistent browser caching system.
-
-Achievements:
-Took a Team Lead role and a responsibility for most of the estimations. 
-Made design and architecture decisions that enabled us to decouple our code from the old legacy part of the app. This boosted our productivity and improved the quality of the application.
-The estimations were very accurate and the customer was very pleased that we were able to deliver the product on time and in good quality.
-Developed a customizable HTTP caching mechanism that reduced the load on the server side.
-
-Technologies: JavaScript, Ramda, Angular (2+), HTML, SCSS, TFS, Git, Visual Studio Code, Jenkins, Typescript, Cypress
-
-
-10/2018 – 02/2019, Advanced Software Engineer, Zühlke Engineering d.o.o., Belgrade
-Web interface and machine-local UI for boring machines including an application for 3D presentation of pipelines and boring paths for placing cables and pipes underground.
-
-Responsibilities:
-Mentoring younger colleagues in various areas of software engineering.
-Refactoring and reviewing code.
-Conducting demos.
-Communication and clarification of requirements with a client and Mathematics Specialists.
-
-Achievements:
-Took a part in mentoring younger colleagues and clarifying the communications and potential problems between the engineering team and a team of Mathematicians leveraging my mathematical background.
-Implemented most of the math-heavy calculations for the presentation logic of the map viewing (using map-box API) and optimized the number of calls towards 3rd party APIs.
-Introduced good practices for responsive design development.
-
-Technologies: JavaScript, Aurelia, HTML, SCSS, ASP.NET Web API, Jira, Git, Visual Studio, Visual Studio Code, Azure, Typescript, Jest
-
+  {data.projects.map((p) => <Project key={p.key} projectData ={p} />)}
 
 08/2018 – 10/2018, Advanced Software Engineer, Zühlke Engineering d.o.o., Belgrade
 Development of User Interface for utility tools on CNC machines, such as calculators, converters, pdf readers.
@@ -133,8 +114,8 @@ Education and Certificates
 2012 – 2015, Bachelor of Science in Informatics, Mathematical Faculty, University of Belgrade, Serbia
 2016 – 2020 (expected), Master of Science in Informatics, Mathematical Faculty, University of Belgrade, Serbia
 2016, Professional Scrum Developer I, Scrum.org (https://www.scrum.org/user/148027)
-            </p>
         </div>
 );
+};
 
 export default Cv;
