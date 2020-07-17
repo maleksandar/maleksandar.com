@@ -7,8 +7,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Chip from '@material-ui/core/Chip';
 
@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)'
   },
   avatar: {
-    backgroundColor: '#925fa7',
     fontSize: '11px'
   },
   cardActions: {
@@ -44,6 +43,11 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContent: {
     padding: '8px'
+  },
+  expandedCardContent: {
+    li: {
+      style: 'initial'
+    }
   },
   chip: {
     marginBottom: '2px',
@@ -70,13 +74,16 @@ const Project = ({ projectData }) => {
             variant="square"
             aria-label="recipe"
             className={classes.avatar}
+            src={projectData.employer.avatar.imgSrc}
+            style= {{ backgroundColor: projectData.employer.avatar.color }}
+            color={projectData.employer.avatar.color}
           >
-            zühlke
+            {projectData.employer.avatar.text}
           </Avatar>
         }
 
-        title={<span className={classes.projectTitle}>[{projectData.timeSpan}] - {projectData.title}</span>}
-       subheader={projectData.employer}
+       title={<span className={classes.projectTitle}>{projectData.timeSpan} | {projectData.title}</span>}
+       subheader={projectData.employer.name}
       />
 
       <CardContent className={classes.cardContent}>
@@ -86,7 +93,7 @@ const Project = ({ projectData }) => {
       </CardContent>
       <CardActions disableSpacing className={classes.cardActions}>
 
-      {projectData.technologies.map((t) => <Chip key={t} size='small' className={classes.chip} label={t}/>)}
+        {projectData.technologies.map((t) => <Chip key={t} variant='outlined' size='small' className={classes.chip} label={t}/>)}
         <IconButton size='small'
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded
@@ -99,39 +106,21 @@ const Project = ({ projectData }) => {
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <ul> 
-            <li> 1</li>
-            <li> 2</li>
-            <li> 3</li>
-
-          </ul>
+        <CardContent  className={classes.expandedCardContent}>
+        <Typography variant="body2" color="textPrimary" component="div">
+            <span> <i> Responsibilities: </i> </span>
+            <ul>
+              {projectData.responsibilities.map((r) => <li key={r}>{r}</li>)}
+            </ul>
+            {projectData.achievements.length ? <span> <i> Achievements: </i> </span> : null}
+            <ul>
+              {projectData.achievements.map((a) => <li key={a}>{a}</li>)}
+            </ul>
+            </Typography>
         </CardContent>
       </Collapse>
     </Card>
   );
 };
-// <div>
-//     <p>
-//        <b>{projectData.timeSpan}</b>, <i>{projectData.positionTitle}, {projectData.employer}</i>
-//     </p>
-//     <p>
-//         {projectData.shortDescription}
-//     </p>
-
-//     <p>Responsibilities:</p>
-//     <ul>
-//         {projectData.responsibilities.map((r) => (<li key={r}>{r}</li>))}
-//     </ul>
-
-//     <p>Achievements:</p>
-//     <ul>
-//         {projectData.achievements.map((a) => (<li key={a}>{a}</li>))}
-//     </ul>
-
-//     <p>Technologies:</p>
-//         {projectData.technologies.map((t) => (<span key={t}>{t}, </span>))}
-
-// </div>
 
 export default Project;

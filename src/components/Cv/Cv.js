@@ -1,9 +1,11 @@
 import React from 'react';
+
+
 import Project from './Project';
 import data from './data';
+import Filter from './Filter';
 
-const Cv = () => {
-  return (
+const Cv = () => (
     <div>
 
     Senior UI Developer
@@ -26,11 +28,9 @@ const Cv = () => {
         <li>Databases: MongoDB, MS SQLServer, RavenDB</li>
         <li>Issue Tracking: Jira, TFS</li>
     </ul>
-    <h3>Experience</h3>
-
-      {data.projects.map((p) => <Project key={p.key} projectData ={p} />)}
-</div>
-);
-};
+    <h3>Experience:</h3>
+    <Filter/>
+    {data.projects.map((p) => <Project key={p.key} projectData ={p} />)}
+</div>);
 
 export default Cv;

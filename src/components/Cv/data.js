@@ -1,9 +1,28 @@
+const employers = {
+  griddynamics: {
+    name: 'Grid Dynamics | Belgrade',
+    avatar: {
+      text: 'GD',
+      color: '#a9aa00',
+      imgSrc: '/media/gd_logo.png'
+    }
+  },
+  zuehlke: {
+    name: 'Zühlke Engineering d.o.o. | Belgrade',
+    avatar: {
+      text: 'zühlke',
+      color: '#925fa7',
+      imgSrc: '/media/logo-zuehlke-small.png'
+    }
+  }
+};
+
 const projects = [
   {
     key: 0,
     timeSpan: '02/2019 – 04/2020',
     positionTitle: 'Senior UI Engineer',
-    employer: 'Grid Dynamics, Belgrade',
+    employer: employers.griddynamics,
     title: 'Banking System - Widget Board',
     shortDescription: 'Development of widget board integrated with multiple banking services relevant for financial advisors.',
     responsibilities: [
@@ -13,10 +32,10 @@ const projects = [
       'Conducting demos'
     ],
     achievements: [
-      'Fixing the old state management flow system of the application and introducing a new flux-like pattern and persistent browser caching system.',
-      'Made design and architecture decisions that enabled us to decouple our code from the old legacy part of the app. This boosted our productivity and improved the quality of the application.',
-      'The estimations were very accurate and the customer was very pleased that we were able to deliver the product on time and in good quality.',
-      'Developed a customizable HTTP caching mechanism that reduced the load on the server side.'
+      'Fixing the old state management system of the application and introducing a new flux-like pattern.',
+      'Made design and architecture decisions that enabled us to decouple our code from the old legacy part of the app.',
+      'Made accurate long term estimations. The customer was very pleased that we were able to deliver the product on time and in good quality.',
+      'Developed a customizable in-browser HTTP caching mechanism that reduced the load on the server side.'
     ],
     technologies: [
       'JavaScript',
@@ -35,8 +54,8 @@ const projects = [
     key: 1,
     timeSpan: '10/2018 – 02/2019',
     positionTitle: 'Advanced Software Engineer',
-    employer: 'Zühlke Engineering d.o.o., Belgrade',
-    title: 'Boring Machines - Math Visualization & User Interface',
+    employer: employers.zuehlke,
+    title: 'Boring Machines - Math Visualization & UI',
     shortDescription: 'Web interface and machine-local UI for boring machines including an application for 3D presentation of pipelines and boring paths for placing cables and pipes underground.',
     responsibilities: [
       'Mentoring younger colleagues in various areas of software engineering.',
@@ -67,9 +86,9 @@ const projects = [
     key: 2,
     timeSpan: '08/2018 – 10/2018',
     positionTitle: 'Advanced Software Engineer',
-    employer: 'Zühlke Engineering d.o.o., Belgrade',
-    title: 'CNC Machines - User Interface',
-    shortDescription: 'Development of User Interface for utility tools on CNC machines, such as calculators, converters, pdf readers.',
+    employer: employers.zuehlke,
+    title: 'CNC Machines - UI',
+    shortDescription: 'Development of User interface for utility tools on CNC machines, such as calculators, converters, pdf readers.',
     responsibilities: [
       'Writing Unit and Integration tests.',
       'Mentoring engineers from the client side in areas of software engineering and SCRUM.',
@@ -99,7 +118,7 @@ const projects = [
     key: 3,
     timeSpan: '08/2018 – 09/2018',
     positionTitle: 'Advanced Software Engineer',
-    employer: 'Zühlke Engineering d.o.o., Belgrade',
+    employer: employers.zuehlke,
     title: 'Frontend Consultant',
     shortDescription: 'Internal technical consultant for FE technologies and best practices.',
     responsibilities: [
@@ -123,9 +142,9 @@ const projects = [
     key: 4,
     timeSpan: '01/2018 – 07/2018',
     positionTitle: 'Professional Software Engineer',
-    employer: 'Zühlke Engineering d.o.o., Belgrade',
-    title: 'Power Plant - User Interface',
-    shortDescription: 'UI interface development for operating a gas-powered power plant.',
+    employer: employers.zuehlke,
+    title: 'Power Plant - UI',
+    shortDescription: 'User interface development for operating a gas-powered power plant.',
     responsibilities: [
       'Refactoring and translating legacy code from non-modular Angular.js code to typescript and webpack.',
       'Constant integration of new features.',
@@ -150,7 +169,7 @@ const projects = [
     key: 5,
     timeSpan: '03/2017 – 12/2017',
     positionTitle: 'Professional Software Engineer',
-    employer: 'Zühlke Engineering d.o.o., Belgrade',
+    employer: employers.zuehlke,
     title: 'Online Image and Photo Editor',
     shortDescription: 'Web Interface for online greeting card creation tool and image editor.',
     responsibilities: [
@@ -177,7 +196,7 @@ const projects = [
     key: 6,
     timeSpan: '03/2016 ​- 09/2016',
     positionTitle: 'Professional Software Engineer',
-    employer: 'Zühlke Engineering d.o.o., Belgrade',
+    employer: employers.zuehlke,
     title: 'Event Organization Platform',
     shortDescription: 'Platform for organizing events for a major sport oriented organization.',
     responsibilities: [
@@ -202,7 +221,7 @@ const projects = [
     key: 7,
     timeSpan: '09/2015 ​- 03/2016',
     positionTitle: 'Professional Software Engineer',
-    employer: 'Zühlke Engineering d.o.o., Belgrade',
+    employer: employers.zuehlke,
     title: 'Insurance Underwriting Platform',
     shortDescription: 'Platform for underwriters in the insurance company.',
     responsibilities: [
