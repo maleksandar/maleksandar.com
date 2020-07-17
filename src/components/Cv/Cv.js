@@ -4,6 +4,7 @@ import React from 'react';
 import Project from './Project';
 import data from './data';
 import Filter from './Filter';
+import styles from './Cv.module.scss';
 
 const Cv = () => (
     <div>
@@ -28,8 +29,7 @@ const Cv = () => (
         <li>Databases: MongoDB, MS SQLServer, RavenDB</li>
         <li>Issue Tracking: Jira, TFS</li>
     </ul>
-    <h3>Experience:</h3>
-    <Filter/>
+    <div className={styles['experience__header']}><h3>Experience:</h3><Filter/></div>
     {data.projects.map((p) => <Project key={p.key} projectData ={p} />)}
 </div>);
 

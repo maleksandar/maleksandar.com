@@ -106,7 +106,7 @@ const Project = ({ projectData }) => {
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent  className={classes.expandedCardContent}>
+        <CardContent className={classes.expandedCardContent}>
         <Typography variant="body2" color="textPrimary" component="div">
             <span> <i> Responsibilities: </i> </span>
             <ul>

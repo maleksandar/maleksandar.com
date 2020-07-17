@@ -2,10 +2,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { withPrefix } from 'gatsby';
-import { Provider } from 'react-redux'
 import { useSiteMetadata } from '../../hooks';
 import styles from './Layout.module.scss';
-import store from '../../store/store';
 
 type Props = {
   children: ReactNode,
@@ -39,9 +37,7 @@ const Layout = ({
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
       </Helmet>
-      <Provider store={store}>
         {children}
-      </Provider>
     </div>
   );
 };

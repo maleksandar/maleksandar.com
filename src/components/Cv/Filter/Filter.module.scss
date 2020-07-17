@@ -1,0 +1,15 @@
+.root {
+// maxWidth: 345
+  margin-bottom: '16px';
+  
+  .expand {
+    transform: 'rotate(0deg)',
+    margin-left: 'auto',
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.shortest
+    });
+  }
+  .expandOpen {
+    transform: 'rotate(180deg)'
+  }
+}
