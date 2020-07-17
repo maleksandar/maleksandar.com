@@ -38,8 +38,11 @@
     "disqus"
   ],
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "bluebird": "^3.7.2",
     "classnames": "^2.2.6",
+    "clsx": "^1.1.1",
     "codecov": "^3.7.0",
     "gatsby": "^2.24.2",
     "gatsby-link": "^2.4.12",

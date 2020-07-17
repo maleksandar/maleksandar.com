@@ -1,8 +1,9 @@
 ---
-title: "About me"
+title: "About"
 template: "page"
 socialImage: "/photo.jpg"
 ---
+## About me:
 
 I am a software engineer specialized in frontend technologies. I’m currently on master studies at the Faculty of Mathematics at the University of Belgrade.
 
@@ -10,7 +11,8 @@ I worked mostly in software engineering companies that were service oriented, th
 
 Currently, I work as a senior UI engineer at Grid Dynamics in Belgrade.
 
-About this site:
+## About this site:
+
 I’m not religious about technology choices, but I do have opinions and preferences. Sometimes I enjoy discussing them, at other times I will refer you towards a blog post online that supports my views about the issue. Hopefully, over time, most of those references will lead you to this site.
 
 Besides occasional blog posts, I will use this site to maintain my CV in the format that is for me easiest to maintain.
