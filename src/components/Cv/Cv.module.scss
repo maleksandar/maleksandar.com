@@ -1,9 +1,13 @@
-.experience {
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        h3 {
-            margin-top: 0;
-        }
+.skills {
+    h3 {
+        margin-top: 0;
+    }
+    padding: 8px !important;
+    margin-bottom: 10px;
+}
+
+.section {
+    &__heading {
+        margin-bottom: 8px !important;
     }
 }

@@ -1,0 +1,13 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+
+@media print {
+  .root, .root * {
+    visibility: hidden !important;
+  }
+}
+.root {
+// maxWidth: 345
+  cursor: pointer;
+  margin-bottom: 16px;
+}

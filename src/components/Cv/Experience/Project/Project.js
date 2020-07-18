@@ -15,7 +15,8 @@ import Chip from '@material-ui/core/Chip';
 const useStyles = makeStyles((theme) => ({
   root: {
     // maxWidth: 345
-    marginBottom: '16px'
+    marginBottom: '16px',
+    pageBreakInside: 'avoid'
   },
   media: {
     height: 0,
@@ -66,7 +67,7 @@ const Project = ({ projectData }) => {
     setExpanded(!expanded);
   };
   return (
-      <Card className={classes.root} raised={true}>
+      <Card className={classes.root} raised={false}>
       <CardHeader
         className={classes.cardHeader}
         avatar={

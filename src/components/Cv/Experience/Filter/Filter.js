@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { makeStyles } from '@material-ui/core/styles';
+import styles from './Filter.module.scss';
 
 const Filter = () => {
   const useStyles = makeStyles((theme) => ({
@@ -25,7 +26,6 @@ const Filter = () => {
       transform: 'rotate(180deg)'
     }
   }));
-  const a = 1;
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -34,8 +34,10 @@ const Filter = () => {
     document.querySelectorAll(`button[aria-label="show more"][aria-expanded="${expanded}"]`).forEach((b) => b.click())
   };
   return (
-    <div>
-      { expanded ? 'collapse' : 'expand' }
+    <div className={styles['root']}
+      onClick={handleExpandClick}
+    >
+      { expanded ? <i>collapse all</i> : <i>expand all</i> }
       <IconButton size='small'
             className={clsx(classes.expand, {
               [classes.expandOpen]: expanded
