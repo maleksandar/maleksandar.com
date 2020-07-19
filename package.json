@@ -38,8 +38,11 @@
     "disqus"
   ],
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "bluebird": "^3.7.2",
     "classnames": "^2.2.6",
+    "clsx": "^1.1.1",
     "codecov": "^3.7.0",
     "gatsby": "^2.24.2",
     "gatsby-link": "^2.4.12",
@@ -79,7 +82,9 @@
     "react": "^16.13.1",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "7.10.4",
