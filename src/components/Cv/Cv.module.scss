@@ -1,3 +1,6 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
 .skills {
     h3 {
         margin-top: 0;
@@ -9,5 +12,33 @@
 .section {
     &__heading {
         margin-bottom: 8px !important;
+    }
+}
+
+.print-button {
+    display: flex;
+    align-items: center;
+    height: $button-height;
+    padding: 0 24px;
+    line-height: $button-height;
+    text-align: center;
+    color: $color-base;
+    border: 1px solid $color-gray-border;
+    border-radius: $button-border-radius;
+    font-size: $typographic-base-font-size;
+    font-weight: normal;
+    margin-left: auto;
+    @include margin-top(1);
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+    }
+    background-color: transparent;
+}
+
+@media print {
+    .print-button, .print-button * {
+        visibility: hidden !important;
     }
 }

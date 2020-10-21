@@ -14,13 +14,11 @@ import Chip from '@material-ui/core/Chip';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // maxWidth: 345
     marginBottom: '16px',
     pageBreakInside: 'avoid'
   },
   media: {
     height: 0,
-    // paddingTop: '56.25%' // 16:9
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -40,10 +38,10 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap'
   },
   cardHeader: {
-    padding: '8px'
+    padding: '12px'
   },
   cardContent: {
-    padding: '8px'
+    padding: '12px'
   },
   expandedCardContent: {
     li: {
@@ -94,7 +92,10 @@ const Project = ({ projectData }) => {
       </CardContent>
       <CardActions disableSpacing className={classes.cardActions}>
 
-        {projectData.technologies.map((t) => <Chip key={t} variant='outlined' size='small' className={classes.chip} label={t}/>)}
+        { projectData.technologies && projectData.technologies.length
+          ? projectData.technologies.map((t) => <Chip key={t} variant='outlined' size='small' className={classes.chip} label={t}/>)
+          : null
+        }
         <IconButton size='small'
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded
@@ -113,10 +114,18 @@ const Project = ({ projectData }) => {
             <ul>
               {projectData.responsibilities.map((r) => <li key={r}>{r}</li>)}
             </ul>
-            {projectData.achievements.length ? <span> <i> Achievements: </i> </span> : null}
-            <ul>
-              {projectData.achievements.map((a) => <li key={a}>{a}</li>)}
-            </ul>
+            {
+              projectData.achievements && projectData.achievements.length
+                ? (
+                  <div>
+                    <span> <i> Achievements: </i> </span>
+                    <ul>
+                      {projectData.achievements.map((a) => <li key={a}>{a}</li>)}
+                    </ul>
+                  </div>
+                )
+                : null
+            }
             </Typography>
         </CardContent>
       </Collapse>

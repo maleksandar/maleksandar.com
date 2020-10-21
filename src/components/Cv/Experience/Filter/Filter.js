@@ -8,12 +8,10 @@ import styles from './Filter.module.scss';
 const Filter = () => {
   const useStyles = makeStyles((theme) => ({
     root: {
-      // maxWidth: 345
       marginBottom: '16px'
     },
     media: {
       height: 0,
-      // paddingTop: '56.25%' // 16:9
     },
     expand: {
       transform: 'rotate(0deg)',
@@ -31,7 +29,7 @@ const Filter = () => {
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
-    document.querySelectorAll(`button[aria-label="show more"][aria-expanded="${expanded}"]`).forEach((b) => b.click())
+    document.querySelectorAll(`button[aria-label="show more"][aria-expanded="${expanded}"]`).forEach((b) => b.click());
   };
   return (
     <div className={styles['root']}
