@@ -1,11 +1,16 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
+import PrintIcon from '@material-ui/icons/Print';
 
 import styles from './Cv.module.scss';
 import Experience from './Experience';
 
+function showPrintDialog() {
+  window.print();
+}
 const Cv = () => (
-    <div>
+  <div>
+    <div> <button className={styles['print-button']} onClick={showPrintDialog}> <span> Print </span> <PrintIcon/> </button></div>
     <Typography className={styles['section__heading']} variant="h5" component="h4">
       Summary:
     </Typography>
@@ -31,6 +36,6 @@ const Cv = () => (
     </Typography>
 
     <Experience/>
-</div>);
+  </div>);
 
 export default Cv;

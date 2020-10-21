@@ -16,6 +16,9 @@
   .non-printable, .non-printable * {
     visibility: hidden;
   }
+  .print-button, .print-button * {
+    visibility: hidden;
+  }
 }
 
 .cv {
