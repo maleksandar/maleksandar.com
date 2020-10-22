@@ -9,12 +9,20 @@ function showPrintDialog() {
   window.print();
 }
 const Cv = () => (
-  <div>
-    <div> <button className={styles['print-button']} onClick={showPrintDialog}> <span> Print </span> <PrintIcon/> </button></div>
+  <div className={styles['cv__wrapper']}>
+    <div> <button className={styles['print-button']} onClick={showPrintDialog}> <span className={styles['print-button__label']}> Print </span> <PrintIcon/> </button></div>
+    <div className={styles['print__header']}>
+    <Typography className={styles['section__heading']} variant="h4" component="h4">
+      Aleksandar Milosavljević
+      <Typography variant="body2" color="textPrimary" component="div">
+        alemilosav@gmail.com | +381 69 54 56 209 | Beograd
+      </Typography>
+    </Typography>
+    </div>
     <Typography className={styles['section__heading']} variant="h5" component="h4">
       Summary:
     </Typography>
-    <Typography variant="body2" color="textPrimary" component="p">
+    <Typography className={styles['section__body']} variant="body2" color="textPrimary" component="p">
     Software engineer with a strong focus on quality and maintainability.
       From a technical perspective, mostly focused on Angular stack running on high-end enterprise solutions.
       Other than coding he has relevant experience in mentoring other engineers, team organization responsibilities and consulting.
@@ -24,18 +32,37 @@ const Cv = () => (
     <Typography variant="h5" component="h4" className={styles['section__heading']}>
       Technical Skills:
     </Typography> <Typography variant="body2" color="textPrimary" component="div">
-
-    <ul>
-        <li>Programming languages: JavaScript, Typescript, HTML, CSS, C#</li>
-        <li>Frameworks and libraries: Angular.js, Angular 2+, Rx.js, React</li>
-        <li>Platforms: Mac OS X, Windows 10, Linux</li>
-        <li>Automation and Testing tools: Selenium WebDriver (C#), Jasmine, Jest, Protractor, Karma</li>
-        <li>Databases: MongoDB, MS SQLServer, RavenDB</li>
-        <li>Issue Tracking: Jira, TFS</li>
-    </ul>
+      <ul>
+          <li>Programming languages: JavaScript, Typescript, HTML, CSS, C#</li>
+          <li>Frameworks and libraries: Angular.js, Angular 2+, Rx.js, React</li>
+          <li>Platforms: Mac OS X, Windows 10, Linux</li>
+          <li>Automation and Testing tools: Selenium WebDriver (C#), Jasmine, Jest, Protractor, Karma</li>
+          <li>Databases: MongoDB, MS SQLServer, RavenDB</li>
+          <li>Issue Tracking: Jira, TFS</li>
+      </ul>
     </Typography>
 
     <Experience/>
+    <Typography variant="h5" component="h4" className={styles['section__heading']}>
+      Education:
+    </Typography> <Typography variant="body2" color="textPrimary" component="div">
+      <ul>
+        <li>Mathematical Faculty, University of Belgrade
+          <ul>
+            <li>
+              BSc. in Informatics [2012 - 2015]
+            </li>
+          </ul>
+        </li>
+        <li>Mathematical Faculty, University of Belgrade
+          <ul>
+            <li>
+              MSc. in Informatics [2016 - present]
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </Typography>
   </div>);
 
 export default Cv;
