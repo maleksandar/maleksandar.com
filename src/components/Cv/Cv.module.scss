@@ -13,9 +13,18 @@
     &__heading {
         margin-bottom: 8px !important;
     }
+    &__body {
+        margin-bottom: 20px !important;
+    }
 }
-
+.cv__wrapper {
+    position: relative;
+}
 .print-button {
+    position: absolute;
+    top: -26px;
+    right: 0;
+    cursor: pointer;
     display: flex;
     align-items: center;
     height: $button-height;
@@ -35,10 +44,22 @@
       color: $color-primary;
     }
     background-color: transparent;
+
+    &__label {
+        margin-right: 20px;
+    }
+}
+
+.print__header {
+    display: none;
 }
 
 @media print {
     .print-button, .print-button * {
         visibility: hidden !important;
+    }
+    .print__header, .print__header * {
+        visibility: visible !important;
+        display: block;
     }
 }
