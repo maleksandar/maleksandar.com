@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://maleksandar.com',
   pathPrefix: '/',
   title: 'maleksandar.com',
   subtitle: 'Software engineer & JS enthusiast',
   copyright: '© All rights reserved.',
   disqusShortname: 'maleksandar',
   postsPerPage: 4,
-  googleAnalyticsId: 'TODO: ADD googleAnalyticsId',
+  googleAnalyticsId: null,
   useKatex: false,
   menu: [
     {
@@ -31,7 +31,7 @@ module.exports = {
     contacts: {
       email: 'alemilosav@gmail.com',
       facebook: '',
-      telegram: '',
+      telegram: 'maleksandar',
       twitter: '',
       github: 'maleksandar',
       rss: '',
