@@ -15,7 +15,7 @@ const Cv = () => (
     <Typography className={styles['section__heading']} variant="h4" component="h4">
       Aleksandar Milosavljević
       <Typography variant="body2" color="textPrimary" component="div">
-        alemilosav@gmail.com | +381 69 54 56 209 | Beograd
+        alemilosav@gmail.com | +381 69 54 56 209 | Belgrade, Serbia
       </Typography>
     </Typography>
     </div>
@@ -23,20 +23,20 @@ const Cv = () => (
       Summary:
     </Typography>
     <Typography className={styles['section__body']} variant="body2" color="textPrimary" component="p">
-    Software engineer with a strong focus on quality and maintainability.
-      From a technical perspective, mostly focused on Angular stack running on high-end enterprise solutions.
-      Other than coding he has relevant experience in mentoring other engineers, team organization responsibilities and consulting.
-      Highly proficient in speaking English and has solid communication skills.
+    Software engineer with a strong focus on quality and maintainability. Recently, involved with more management-oriented roles.
+      From a technical perspective, focused mostly on Angular stack running on high-end enterprise solutions.
+      Other than coding, has relevant experience in mentoring other engineers, team organization responsibilities, and consulting.
+      Highly proficient in speaking English with solid communication skills.
       Has 5 years of professional experience in the IT industry.
     </Typography>
     <Typography variant="h5" component="h4" className={styles['section__heading']}>
       Technical Skills:
     </Typography> <Typography variant="body2" color="textPrimary" component="div">
       <ul>
-          <li>Programming languages: JavaScript, Typescript, HTML, CSS, C#</li>
-          <li>Frameworks and libraries: Angular.js, Angular 2+, Rx.js, React</li>
-          <li>Platforms: Mac OS X, Windows 10, Linux</li>
-          <li>Automation and Testing tools: Selenium WebDriver (C#), Jasmine, Jest, Protractor, Karma</li>
+          <li>Programming languages: JavaScript, Typescript, C#</li>
+          <li>Frameworks and libraries: Angular.js, Angular (2+), Rx.js, React</li>
+          <li>Platforms: Windows 10, Linux, Mac OS X</li>
+          <li>Automation and Testing tools: Selenium, Jasmine, Jest, Protractor, Karma</li>
           <li>Databases: MongoDB, MS SQLServer, RavenDB</li>
           <li>Issue Tracking: Jira, TFS</li>
       </ul>
@@ -44,25 +44,33 @@ const Cv = () => (
 
     <Experience/>
     <Typography variant="h5" component="h4" className={styles['section__heading']}>
-      Education:
+      Education and Certificates:
     </Typography> <Typography variant="body2" color="textPrimary" component="div">
       <ul>
-        <li>Mathematical Faculty, University of Belgrade
+      <li>Mathematical Faculty, University of Belgrade
           <ul>
+            <li>
+              MSc. in Informatics [2016 - present]
+            </li>
             <li>
               BSc. in Informatics [2012 - 2015]
             </li>
           </ul>
         </li>
-        <li>Mathematical Faculty, University of Belgrade
+        <li>Professional SCRUM Developer I
           <ul>
             <li>
-              MSc. in Informatics [2016 - present]
+              <a href="https://www.scrum.org/user/148027">Scrum.org</a>
             </li>
           </ul>
         </li>
       </ul>
     </Typography>
+    <div className={styles['print__note']}>
+      <p>
+        <i>Note:</i> This CV was generated from a webpage. Most recent version of this CV can be found at <a href="https://maleksandar.com/cv">maleksandar.com/cv</a>.
+      </p>
+    </div>
   </div>);
 
 export default Cv;

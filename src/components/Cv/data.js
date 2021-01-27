@@ -32,7 +32,7 @@ const projects = [
     positionTitle: 'Delivery Manager',
     employer: employers.griddynamics,
     title: 'Salesman iOS application for sportswear industry',
-    shortDescription: 'Managing team of iOS developers.',
+    shortDescription: 'Managing team of iOS developers and delivery timeline planing.',
     responsibilities: [
       'Managing international team by conducting performance reviews and setting performance goals.',
       'Removing team impediments and assuring SCRUM methodology implementation.',
