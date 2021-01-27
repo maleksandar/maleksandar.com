@@ -45,7 +45,7 @@ const Cv = () => (
     <Experience/>
     <Typography variant="h5" component="h4" className={styles['section__heading']}>
       Education and Certificates:
-    </Typography> <Typography variant="body2" color="textPrimary" component="div">
+    </Typography> <Typography variant="body2" color="textPrimary" component="div" className={styles['education__list']}>
       <ul>
       <li>Mathematical Faculty, University of Belgrade
           <ul>
