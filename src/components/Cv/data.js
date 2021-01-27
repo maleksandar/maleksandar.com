@@ -27,8 +27,25 @@ const employers = {
 
 const projects = [
   {
+    key: 11,
+    timeSpan: '01/2021 - (present)',
+    positionTitle: 'Delivery Manager',
+    employer: employers.griddynamics,
+    title: 'Salesman iOS application for sportswear industry',
+    shortDescription: 'Managing team of iOS developers.',
+    responsibilities: [
+      'Managing international team by conducting performance reviews and setting performance goals.',
+      'Removing team impediments and assuring SCRUM methodology implementation.',
+      'Delivery timeline assurance.'
+    ],
+    technologies: [
+      'Management',
+      'SCRUM'
+    ]
+  },
+  {
     key: 10,
-    timeSpan: '05/2020 - (present)',
+    timeSpan: '06/2020 - 01/2021',
     positionTitle: 'Senior UI Engineer',
     employer: employers.griddynamics,
     title: 'E-commerce platform',
@@ -82,7 +99,7 @@ const projects = [
     responsibilities: [
       'Conducting performance reviews for UI engineers in Belgrade',
       'Setting goals for the future performance review sessions',
-      'Supporting and organizing local events and activities related to UI branch',
+      'Supporting and organizing local events and activities related to UI engineering branch',
       'Organizing Internship programs'
     ],
     achievements: [
