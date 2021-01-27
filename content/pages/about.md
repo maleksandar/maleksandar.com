@@ -1,13 +1,20 @@
 ---
-title: "About me"
+title: "About"
 template: "page"
-socialImage: "/media/image-2.jpg"
+socialImage: "/photo.jpg"
 ---
+## About me:
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+I am a software engineer specialized in frontend technologies. I’m currently on master studies at the Faculty of Mathematics at the University of Belgrade.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+I worked mostly in software engineering companies that were service oriented, therefore I developed software for many different clients and business areas such as insurance, major sports organizations, banks, heavy machine building industry, and many more. Also, I worked as a full stack web developer in .NET, so developing and designing REST APIs are not the things that are unknown to me.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+Currently, I work as a Senior UI Engineer and Specialization Lead at Grid Dynamics in Belgrade.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+## About this site:
+
+I’m not religious about technology choices, but I do have opinions and preferences. Sometimes I enjoy discussing them, at other times I will refer you towards a blog post online that supports my views about the issue. Hopefully, over time, most of those references will lead you to this site.
+
+Besides occasional blog posts, I will use this site to maintain my CV in the format that is for me the easiest to maintain.
+
+Quite frankly, I actually started working on this site because I hate updating my CV. Using some generic word template looks way too cheap, and using Latex to generate some nice PDF is way too painful for me.

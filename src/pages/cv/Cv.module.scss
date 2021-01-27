@@ -1,5 +1,25 @@
-@import '../assets/scss/variables';
-@import '../assets/scss/mixins';
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .cv__inner, .cv__inner * {
+    visibility: visible;
+  }
+  .cv__inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .non-printable, .non-printable * {
+    visibility: hidden;
+  }
+  .print-button, .print-button * {
+    visibility: hidden;
+  }
+}
 
 .cv {
   @include margin-bottom(2);
@@ -21,7 +41,6 @@
     @include line-height(1);
     @include margin(0, 0, 1);
   }
-
 }
 
 @include breakpoint-sm {
@@ -46,3 +65,4 @@
 
   }
 }
+
