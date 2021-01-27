@@ -68,7 +68,7 @@ const Cv = () => (
     </Typography>
     <div className={styles['print__note']}>
       <p>
-        <i>Note:</i> This CV was generated from a webpage. Most recent version of this CV can be found at <a href="https://maleksandar.com/cv">maleksandar.com/cv</a>.
+        <i>Note:</i> This CV was generated from a webpage. The most recent version of this CV can be found at <a href="https://maleksandar.com/cv">maleksandar.com/cv</a>.
       </p>
     </div>
   </div>);
