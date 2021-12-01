@@ -50,7 +50,7 @@ const Cv = () => (
       <li>Mathematical Faculty, University of Belgrade
           <ul>
             <li>
-              MSc. in Informatics [2016 - present]
+              MSc. in Informatics [2016 - 2021] <i><a href='http://elibrary.matf.bg.ac.rs/handle/123456789/5252'>(thesis)</a></i>
             </li>
             <li>
               BSc. in Informatics [2012 - 2015]

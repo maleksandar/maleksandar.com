@@ -28,7 +28,7 @@ const employers = {
 const projects = [
   {
     key: 11,
-    timeSpan: '01/2021 - (present)',
+    timeSpan: '01/2021 - 06/2021',
     positionTitle: 'Delivery Manager',
     employer: employers.griddynamics,
     title: 'Salesman iOS application for sportswear industry',
@@ -91,7 +91,7 @@ const projects = [
   },
   {
     key: 8,
-    timeSpan: '02/2020 - (present)',
+    timeSpan: '02/2020 - 06/2021',
     positionTitle: 'UI Specialization Lead',
     employer: employers.griddynamics,
     title: 'Engineering Management',
