@@ -45,6 +45,9 @@ const getContactHref = (name: string, contact: string) => {
     case 'soundcloud':
       href = `https://soundcloud.com/${contact}`;
       break;
+    case 'calendar':
+      href = `https://cal.com/${contact}`;
+      break;
     default:
       href = contact;
       break;

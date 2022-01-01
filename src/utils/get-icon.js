@@ -50,6 +50,9 @@ const getIcon = (name: string) => {
     case 'soundcloud':
       icon = ICONS.SOUNDCLOUD;
       break;
+    case 'calendar':
+      icon = ICONS.CUSTOM_CALENDAR;
+      break;
     default:
       icon = {};
       break;
