@@ -29,7 +29,7 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Software engineer & JS enthusiast',
     contacts: {
-      email: 'alemilosav@gmail.com',
+      email: 'amilosavljevic@protonmail.com',
       facebook: '',
       telegram: 'maleksandar',
       twitter: '',

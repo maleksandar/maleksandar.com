@@ -15,7 +15,7 @@ const Cv = () => (
     <Typography className={styles['section__heading']} variant="h4" component="h4">
       Aleksandar Milosavljević
       <Typography variant="body2" color="textPrimary" component="div">
-        alemilosav@gmail.com | +381 69 54 56 209 | Belgrade, Serbia
+      amilosavljevic@protonmail.com | +381 69 54 56 209 | Belgrade, Serbia
       </Typography>
     </Typography>
     </div>
