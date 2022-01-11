@@ -13,6 +13,16 @@ description: "Blog building in progress..."
 socialImage: "/media/image-2.jpg"
 ---
 
+```
+Block of code
+
+```
+
+```javascript
+const a = 12;
+function b() {}
+```
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis convallis lorem, at vulputate velit commodo at. Pellentesque ex lectus, sollicitudin a interdum non, fermentum nec arcu. Morbi porta mauris dolor, ac imperdiet odio venenatis vitae. Suspendisse orci nibh, semper quis mi sed, viverra iaculis augue. Aenean sit amet augue ultrices, mattis lacus laoreet, ullamcorper augue. Proin fermentum fringilla est, nec cursus tellus ullamcorper vitae. Duis vel interdum quam. Aliquam vel placerat urna, a tempor quam. Donec et placerat massa. Mauris non risus ante. Suspendisse tincidunt lectus at efficitur convallis.
 
 Sed sollicitudin faucibus nisi, et gravida tortor hendrerit aliquet. Donec posuere elementum libero, lobortis cursus purus auctor non. Morbi aliquam, nisi sagittis tempor ornare, sapien turpis elementum turpis, gravida tincidunt turpis ex vel orci. Nam blandit, enim at vehicula malesuada, orci ante euismod neque, in blandit dui ante nec nisi. Sed non aliquam risus. Sed ut velit et est dictum imperdiet ornare sed dolor. Aenean nec nisl et neque interdum lacinia sollicitudin vehicula arcu. Nullam consectetur tincidunt urna congue mattis. Fusce facilisis augue vitae odio commodo ullamcorper. Phasellus pharetra augue vitae mollis pharetra.
