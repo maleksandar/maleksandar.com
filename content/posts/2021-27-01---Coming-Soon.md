@@ -1,16 +1,16 @@
 ---
 title: Coming Soon
-date: "2021-01-27T22:40:32.169Z"
-template: "post"
+date: '2021-01-27T22:40:32.169Z'
+template: 'post'
 draft: false
-slug: "coming-soon"
-category: "Software Engineering"
+slug: 'coming-soon'
+category: 'Software Engineering'
 tags:
-  - "In Progress"
-  - "Software Engineering"
-  - "Web Development"
-description: "Blog building in progress..."
-socialImage: "/media/image-2.jpg"
+  - 'In Progress'
+  - 'Software Engineering'
+  - 'Web Development'
+description: 'Blog building in progress...'
+socialImage: '/media/image-2.jpg'
 ---
 
 ```
@@ -22,6 +22,13 @@ Block of code
 const a = 12;
 function b() {}
 ```
+
+<iframe src="https://codesandbox.io/embed/broken-leaf-dzrhj?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.ts&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="broken-leaf-dzrhj"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis convallis lorem, at vulputate velit commodo at. Pellentesque ex lectus, sollicitudin a interdum non, fermentum nec arcu. Morbi porta mauris dolor, ac imperdiet odio venenatis vitae. Suspendisse orci nibh, semper quis mi sed, viverra iaculis augue. Aenean sit amet augue ultrices, mattis lacus laoreet, ullamcorper augue. Proin fermentum fringilla est, nec cursus tellus ullamcorper vitae. Duis vel interdum quam. Aliquam vel placerat urna, a tempor quam. Donec et placerat massa. Mauris non risus ante. Suspendisse tincidunt lectus at efficitur convallis.
 
