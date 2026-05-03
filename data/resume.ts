@@ -25,8 +25,8 @@ export const experience: Experience[] = [
     role: 'Senior Software Engineer',
     period: 'Mar 2026 — Present',
     location: 'Madrid, Spain',
-    description: 'Optimizing UX and UI for Authentication, Authorization and Accounts.',
-    technologies: ['React', 'TypeScript', 'JavaScript'],
+    description: 'Optimizing UX and UI for Authentication, Authorization and Accounts. Actively using agentic coding workflows — Claude Code and OpenAI Codex — as day-to-day collaborators to accelerate feature development, explore solutions faster, and ship with greater confidence.',
+    technologies: ['React', 'TypeScript', 'JavaScript', 'Claude Code', 'Codex'],
   },
   {
     company: 'Decenter',

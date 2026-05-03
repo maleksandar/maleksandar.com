@@ -3,7 +3,7 @@ import Tags from "@/components/Tags";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-8 px-6 max-w-2xl mx-auto">
+    <section id="experience" className="py-8 px-6 max-w-3xl mx-auto">
       <div className="border-t border-[var(--color-border)] pt-7">
         <h2 className="text-[10px] tracking-widest uppercase text-[var(--color-ink-muted)] mb-7">
           Experience

@@ -2,7 +2,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
-import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -11,7 +10,11 @@ export default function Home() {
       <About />
       <Experience />
       <Skills />
-      <Contact />
+      <footer className="px-6 py-10 max-w-3xl mx-auto">
+        <p className="text-[10px] text-[var(--color-border)]">
+          © {new Date().getFullYear()} Aleksandar Milosavljević
+        </p>
+      </footer>
     </main>
   );
 }
