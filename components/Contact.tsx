@@ -45,8 +45,8 @@ const links = [
 export default function Contact() {
   return (
     <section id="contact" className="py-8 px-6 max-w-3xl mx-auto">
-      <div className="border-t border-[var(--color-border)] pt-7 pb-12">
-        <h2 className="text-[10px] tracking-widest uppercase text-[var(--color-ink-muted)] mb-6">
+      <div className="border-t border-border pt-7 pb-12">
+        <h2 className="text-[10px] tracking-widest uppercase text-ink-muted mb-6">
           Contact
         </h2>
         <div className="space-y-3">
@@ -56,16 +56,16 @@ export default function Contact() {
               href={href}
               target={href.startsWith("mailto") ? undefined : "_blank"}
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-xs text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors group"
+              className="flex items-center gap-3 text-xs text-ink-muted hover:text-(--color-ink) transition-colors group"
             >
               <Icon size={14} className="shrink-0" />
-              <span className="underline underline-offset-4 decoration-[var(--color-border)] group-hover:decoration-current">
+              <span className="underline underline-offset-4 decoration-border group-hover:decoration-current">
                 {display}
               </span>
             </a>
           ))}
         </div>
-        <p className="mt-10 text-[10px] text-[var(--color-border)]">
+        <p className="mt-10 text-[10px] text-border">
           © {new Date().getFullYear()} Aleksandar Milosavljević
         </p>
       </div>

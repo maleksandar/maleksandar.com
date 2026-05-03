@@ -31,14 +31,14 @@ export default function Hero() {
   return (
     <section className="pt-10 pb-6 px-6 max-w-3xl mx-auto">
       <div className="flex flex-col lg:flex-row gap-6 items-stretch">
-        <div className="flex-[2] flex flex-col justify-center">
+        <div className="flex-2 flex flex-col justify-center">
           <div className="flex items-center gap-2 mb-2">
             <Logo size={24} />
             <h1 className="text-2xl font-semibold whitespace-nowrap">
               {personal.name}
             </h1>
           </div>
-          <p className="text-sm text-[var(--color-ink-muted)] mb-5">
+          <p className="text-sm text-ink-muted mb-5">
             {personal.subtitle}
           </p>
           <nav className="flex gap-5 text-xs">
@@ -46,7 +46,7 @@ export default function Hero() {
               <a
                 key={s}
                 href={`#${s.toLowerCase()}`}
-                className="text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors underline underline-offset-4 decoration-[var(--color-border)]"
+                className="text-ink-muted hover:text-(--color-ink) transition-colors underline underline-offset-4 decoration-border"
               >
                 {s}
               </a>
@@ -54,7 +54,7 @@ export default function Hero() {
           </nav>
         </div>
 
-        <div className="h-px lg:h-auto lg:w-px bg-[var(--color-border)] lg:self-stretch" />
+        <div className="h-px lg:h-auto lg:w-px bg-border lg:self-stretch" />
 
         <div className="flex-1 flex flex-col justify-center gap-3">
           {contactLinks.map(({ icon: Icon, href, display }) => (
@@ -63,10 +63,10 @@ export default function Hero() {
               href={href}
               target={href.startsWith("mailto") ? undefined : "_blank"}
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-xs text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors group"
+              className="flex items-center gap-2 text-xs text-ink-muted hover:text-(--color-ink) transition-colors group"
             >
               <Icon size={13} className="shrink-0" />
-              <span className="underline underline-offset-4 decoration-[var(--color-border)] group-hover:decoration-current truncate">
+              <span className="underline underline-offset-4 decoration-border group-hover:decoration-current truncate">
                 {display}
               </span>
             </a>

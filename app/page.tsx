@@ -11,7 +11,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <footer className="px-6 py-10 max-w-3xl mx-auto">
-        <p className="text-[10px] text-[var(--color-border)]">
+        <p className="text-[10px] text-border">
           © {new Date().getFullYear()} Aleksandar Milosavljević
         </p>
       </footer>

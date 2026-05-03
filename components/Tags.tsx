@@ -20,7 +20,7 @@ function Tag({ name }: { name: string }) {
       data-tag={key}
       onMouseEnter={highlight}
       onMouseLeave={unhighlight}
-      className="text-[10px] px-1.5 py-0.5 bg-[var(--color-paper-dark)] text-[var(--color-ink-muted)] rounded cursor-default transition-colors"
+      className="text-[10px] px-1.5 py-0.5 bg-paper-dark text-ink-muted rounded cursor-default transition-colors"
     >
       {name}
     </span>
