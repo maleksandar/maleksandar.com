@@ -3,14 +3,14 @@ import Logo from "@/components/Logo";
 
 export default function Hero() {
   return (
-    <section className="pt-14 pb-8 px-6 max-w-2xl mx-auto">
-      <div className="flex items-center gap-3 mb-3">
-        <Logo size={36} />
-        <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
+    <section className="pt-10 pb-6 px-6 max-w-2xl mx-auto">
+      <div className="flex items-center gap-2 mb-2">
+        <Logo size={24} />
+        <h1 className="text-2xl font-semibold whitespace-nowrap">
           {personal.name}
         </h1>
       </div>
-      <p className="text-sm text-[var(--color-ink-muted)] mb-7">
+      <p className="text-sm text-[var(--color-ink-muted)] mb-5">
         {personal.subtitle}
       </p>
       <nav className="flex gap-5 text-xs">
