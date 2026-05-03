@@ -11,9 +11,9 @@ export default function Experience() {
 
         <div className="space-y-7">
           {experience.map((job) => (
-            <div key={job.company + job.period} className="grid grid-cols-[1fr_2fr] gap-5">
+            <div key={job.company + job.period} className="grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-2 sm:gap-5">
               <div>
-                <p className="text-xs text-ink-muted leading-relaxed">
+                <p className="text-xs text-ink-muted leading-relaxed whitespace-nowrap">
                   {job.period}
                 </p>
                 <p className="text-xs text-ink-faint">{job.location}</p>
@@ -36,8 +36,8 @@ export default function Experience() {
           </h2>
           <div className="space-y-5">
             {education.map((e) => (
-              <div key={e.degree} className="grid grid-cols-[1fr_2fr] gap-5">
-                <p className="text-xs text-ink-muted">{e.period}</p>
+              <div key={e.degree} className="grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-2 sm:gap-5">
+                <p className="text-xs text-ink-muted whitespace-nowrap">{e.period}</p>
                 <div>
                   <p className="font-medium text-sm text-(--color-ink)">{e.degree}</p>
                   <p className="text-xs text-ink-muted">{e.institution}</p>

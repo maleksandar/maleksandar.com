@@ -33,8 +33,10 @@ export default function Hero() {
       <div className="flex flex-col lg:flex-row gap-6 items-stretch">
         <div className="flex-2 flex flex-col justify-center">
           <div className="flex items-center gap-2 mb-2">
-            <Logo size={24} />
-            <h1 className="text-2xl font-semibold whitespace-nowrap">
+            <span className="shrink-0 block size-14 sm:size-6">
+              <Logo size={24} className="w-full h-full block" />
+            </span>
+            <h1 className="text-xl sm:text-2xl font-semibold">
               {personal.name}
             </h1>
           </div>

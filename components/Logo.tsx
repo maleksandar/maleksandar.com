@@ -1,4 +1,4 @@
-export default function Logo({ size = 28 }: { size?: number }) {
+export default function Logo({ size = 28, className }: { size?: number; className?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,6 +7,7 @@ export default function Logo({ size = 28 }: { size?: number }) {
       viewBox="0 0 32 32"
       fill="none"
       aria-hidden="true"
+      className={className}
     >
       <rect width="32" height="32" rx="3" fill="#111111" />
       <text
